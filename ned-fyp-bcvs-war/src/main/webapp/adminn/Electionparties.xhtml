@@ -39,20 +39,16 @@
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
-                                                <th>Constituency Name</th>
-                                                <th>Constituency Type</th>
-                                                <th>Number Of Candidates</th>
-                                                <th>Number Of Voters</th>
+                                                <th>Party Name</th>
+                                                <th>Party Symbol</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <ui:repeat var="constituency" value="#{constituenciesBean.constituencies}" >
+                                            <ui:repeat var="party" value="#{electionPartiesBean.electionPartiesList}" >
                                                 <tr class="odd gradeX">
-                                                    <td>#{constituency.constId}</td>
-                                                    <td>#{constituency.constName}</td>
-                                                    <td>#{constituency.constTypeName}</td>
-                                                    <td>#{constituency.noOfCandidates}</td>
-                                                    <td>#{constituency.noOfVoters}</td>
+                                                    <td>#{party.electionPartyId}</td>
+                                                    <td>#{party.partyName}</td>
+                                                    <td>#{party.symbolId}</td>
                                                 </tr>
                                             </ui:repeat>
                                         </tbody>
